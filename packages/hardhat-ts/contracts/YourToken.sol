@@ -9,7 +9,9 @@ contract YourToken is ERC20 {
   // ToDo: add constructor and mint tokens for deployer,
   //       you can use the above import for ERC20.sol. Read the docs ^^^
 
-  constructor() public ERC20('Gold', 'GLD') {
-    // _mint() 1000 * 10 ** 18 to msg.sender
+  constructor() public ERC20('Ego', '$Eg') {
+    // _mint() 1000 * 10 ** 18 to msg.
+    uint120 amount = 1000 * (10**18);
+    _mint(msg.sender, amount);
   }
 }
