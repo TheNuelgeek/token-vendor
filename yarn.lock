@@ -1591,6 +1591,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@openzeppelin/contracts@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "@openzeppelin/contracts@npm:4.7.1"
+  checksum: 6377e978edb83dafd68e784d3e1334fc5a4adb9afcf855a44a66e1e8046c25894cb230e7dce54bdaa01f00a38248bb8d45780864a1f429e8ef9ffe666a005bf4
+  languageName: node
+  linkType: hard
+
 "@originjs/vite-plugin-commonjs@npm:^1.0.0":
   version: 1.0.1
   resolution: "@originjs/vite-plugin-commonjs@npm:1.0.1"
@@ -1767,6 +1774,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@scaffold-eth/typescript@workspace:."
   dependencies:
+    "@openzeppelin/contracts": ^4.7.1
     eslint: ^7.32.0
     prettier: ^2.4.1
     react: ^17.0.2
