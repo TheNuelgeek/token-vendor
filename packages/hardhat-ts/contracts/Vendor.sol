@@ -27,5 +27,8 @@ contract Vendor {
     (bool os, ) = payable(msg.sender).call{value: amount}('');
   }
 
+  function transferOwnership(address to) public {
+    transferOwnership(to);
+  }
   // ToDo: create a sellTokens() function:
 }
