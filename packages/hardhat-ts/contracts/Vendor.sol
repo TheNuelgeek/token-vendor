@@ -31,6 +31,10 @@ contract Vendor is Ownable {
   function sellTokens(uint256 amount) public {
     uint256 ethAmount = amount * tokensPerEth;
     yourToken.transferFrom(msg.sender, address(this), amount); //transferring to the vendor
-    (bool os, ) = payable(msg.sender).call{value: ethAmount / 10**18}(''); // transferring to the user
+    //(bool os, ) = payable(msg.sender).call{value: ethAmount / 10**18}(''); // transferring to the user
+  }
+
+  function vendorContractaddress() public view returns (address) {
+    return address(this);
   }
 }
