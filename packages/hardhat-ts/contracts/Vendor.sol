@@ -37,4 +37,7 @@ contract Vendor is Ownable {
   function vendorContractaddress() public view returns (address) {
     return address(this);
   }
+  //1000000000000000000 = 100
+  //20000000000000000000
+  //6436.4469
 }
