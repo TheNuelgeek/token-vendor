@@ -30,7 +30,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironmentExtended) => {
     ethers.utils.parseEther("1000")
   );
 
-  await vendor.transferOwnership("0x7ED36e92A6407728c30CF22adfa94D4f47676572");
+  await vendor.transferOwnership("0x793304f421b09D8fDa4225d7AAE33483fDA5406F");
 };
 export default func;
 func.tags = ['Vendor'];
